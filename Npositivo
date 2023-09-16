@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+  
+    int N;
+
+    
+    printf("Digite um número inteiro positivo N: ");
+    scanf("%d", &N);
+
+  
+    if (N < 0) {
+        printf("O número inserido não é positivo.\n");
+    } else {
+        printf("Números naturais de 0 até %d:\n", N);
+
+        // Loop para imprimir os números naturais
+        for (int i = 0; i <= N; i++) {
+            printf("%d ", i);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
