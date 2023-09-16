@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    printf("Os cinco primeiros múltiplos de 3 maiores que 0 são:\n");
+
+    // Inicializa uma variável para contar os múltiplos encontrados
+    int count = 0;
+
+    // Inicializa uma variável para armazenar o número a ser testado
+    int numero = 1;
+
+    // Loop para encontrar os cinco primeiros múltiplos de 3
+    while (count < 5) {
+        if (numero % 3 == 0) {
+            printf("%d\n", numero);
+            count++;
+        }
+        numero++;
+    }
+
+    return 0;
+}
