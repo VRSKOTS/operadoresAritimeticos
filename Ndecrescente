@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração da variável para armazenar N
+    int N;
+
+    // Solicita ao usuário que insira N
+    printf("Digite um número inteiro positivo N: ");
+    scanf("%d", &N);
+
+    // Verifica se N é positivo
+    if (N < 0) {
+        printf("O número inserido não é positivo.\n");
+    } else {
+        printf("Números naturais de %d até 0 em ordem decrescente:\n", N);
+
+        // Loop para imprimir os números naturais em ordem decrescente
+        for (int i = N; i >= 0; i--) {
+            printf("%d ", i);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
